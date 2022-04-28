@@ -12,6 +12,12 @@ function writePassword() {
         window.alert("You need to provide a valid entry! Please try again.");
         return writePassword();
       }
+      
+      if (promptLength > 8 || promptLength < 128) {
+        window.alert("Success");
+      }
+
+
 
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
