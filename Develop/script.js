@@ -1,8 +1,7 @@
 
 
-function generatePassword() {
-   var result = "";
-    
+var generatePassword = function(promptLength, promptCaps, promptLow, promptSpcl, promptNum) {
+  var result = ""
    var characters = ""; 
       
     var promptLength = window.prompt("Choose length of password (8-128 characters)")
@@ -12,6 +11,10 @@ function generatePassword() {
         return generatePassword();
       }
       
+      if (promptLength === "yes" || promptLength === "YES") {
+        characters += promptLength;
+        console.log(promptLength);
+      }
 
       if (promptLength < 8 || promptLength > 128) {
         window.alert("Denied");
@@ -84,14 +87,12 @@ function generatePassword() {
       result += characters.charAt(Math.floor(Math.random() * characters.length));
     }
   
-    if (!promptCaps && !promptLow && !promptNum && !promptSpcl) {
-      window.confirm("You must select at least one character type!")
-      return generatePassword();
-  }
-return result;
+  
+  return result;
 }
 return password;
 }
+
     // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
       
