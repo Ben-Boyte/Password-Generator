@@ -13,7 +13,7 @@ var generatePassword = function(promptLength, promptCaps, promptLow, promptSpcl,
       
       if (promptLength === "yes" || promptLength === "YES") {
         characters += promptLength;
-        console.log(promptLength);
+        console.log(characters += promptLength);
       }
 
       if (promptLength < 8 || promptLength > 128) {
@@ -84,7 +84,7 @@ var generatePassword = function(promptLength, promptCaps, promptLow, promptSpcl,
      window.alert("Denied");
   
      for (var i = 0; i < promptLength; i++) {
-      result += characters.charAt(Math.floor(Math.random() * characters.length));
+       result += characters;
     }
   
   
