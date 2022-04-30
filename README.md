@@ -6,4 +6,4 @@
 
 # Screenshot of finished product;
 
-# ![Screenshot](./assets/Screenshot.PNG "Screenshot")
+# ![Screenshot](./Develop/assets/images/Screenshot.PNG "Screenshot")
